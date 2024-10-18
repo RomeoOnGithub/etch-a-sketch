@@ -1,0 +1,23 @@
+/* container styling */
+#container {
+    background-color:darkgray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+
+/*scale of the grid*/
+.cell-style {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
