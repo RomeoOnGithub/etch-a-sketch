@@ -15,6 +15,14 @@ const grid = document.querySelector('#grid');
     //selected grid size
     document.getElementById('gridSizeSelector').addEventListener("click", function() {
         let selectedGridSize = Number(window.prompt("enter a value to determine the grid size (max. 100)"));
+        
+        //(counter-error) 100 x 100 limit
+        if (selectedGridSize > 100) {
+            alert("Grid size cannot be larger than 100. Please enter a smaller value.");
+            return;
+        }
+
+        //select grid size
         gridSize = selectedGridSize;
         clearGrid();
         createGrid(gridSize);
