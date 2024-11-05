@@ -1,4 +1,9 @@
-/* container styling */
+/*page styling*/
+body {
+    background-color: lightgray;
+}
+
+/* grid container styling */
 #container {
     height: 100vh;
     display: flex;
@@ -15,12 +20,28 @@
 
 /*scale of the grid*/
 .cell-style {
-    background-color: lightgray;
+    background-color: white;
     border: 1px solid black;
     box-sizing: border-box;
 }
 
 /*change color of a cell*/
-.cell-color {
+.black-hover {
     background-color: black;
+}
+
+.randomized-RGB {
+    background-color: var(--randomValueSet);
+}
+
+.selected-color {
+
+}
+
+.gradual-opacity {
+    background-color: rgba(0, 0, 0, var(--opacityLevel));
+}
+
+.white {
+    background-color: white;
 }
